@@ -1,5 +1,4 @@
 from replit import clear
-#HINT: You can call clear() to clear the output in the console.
 
 action_list = []
 new_bidder = True
@@ -17,21 +16,15 @@ while new_bidder:
   name = input("What is your name? ")
   bid = input("What's your bid?: $")
   action(name, bid)
+  print(entry)
   for person in action_list:
     if person['Bid'] > highest_bid:
       highest_bid = person['Bid']
-  winner = person['Person']  
- # print(person['Person'])
+      winner = person['Person']  
+  
   new = input("Are there any other bidders? Type 'yes' or 'no'.\n")
   if new == 'no':
     new_bidder = False
     print(f'The person who wins is {winner} with a bid of: ${highest_bid}')
   else:
     clear()
-    
-
-
-  
-  
-  
-  
