@@ -16,7 +16,6 @@ while new_bidder:
   name = input("What is your name? ")
   bid = input("What's your bid?: $")
   action(name, bid)
-  print(entry)
   for person in action_list:
     if person['Bid'] > highest_bid:
       highest_bid = person['Bid']
